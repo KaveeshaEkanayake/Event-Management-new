@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamscape Events</title>
+    <link rel="stylesheet" href="css/style.css">
+<style>  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #FFFF2E; /* Dark Orange color */
+    color: black;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo h1 {
+    font-size: 24px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.navbar .nav-links a:hover {
+    color: #f0f0f0;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://wallpapercave.com/wp/wp2349396.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+.home { 
+    color: white
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #FFFF2E;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #FFFF2E;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background: #FFFFAD;
+}
+.about-image {
+    flex: 1;
+    max-width: 400px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+/* Features Section */
+.features {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            
+            gap: 160px;
+        }
+
+        .feature-item {
+            padding: 20px;
+            background-color: #FFFFAD;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            font-size: 16px;
+            color: #666;
+        }
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+.gallery {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 60px;
+}
+
+.gallery-grid img {
+    width: 200%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .contact .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact label {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background-color: #eca217;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #FFFFAD;
+        }
+
+  </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1 > <c>Dreamscape Events</c></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Your Dream Event</h2>
+            <p>We specialize in creating unforgettable experiences.</p>
+            <a href="#about" class="btn">Login</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Dreamscape Events is a leading event management company dedicated to creating extraordinary and memorable experiences for clients. We specialize in corporate events, weddings, trade fairs, and private celebrations.</p>
+            <h1> Our Vision </h1> 
+                "To be the leading trade fair organizer and the top MICE solutions provider in the region."
+                
+            <h1> Mission</h1>
+             To achieve customer satisfaction by delivering a professional and an accurate service while increasing the productivity and ensuring the development of the employees.
+                
+            <h1>About Our Company</h1>
+              Dreamscape was established with the ambition to be a leading exhibition organizer in Sri Lanka. A member of Connaissance De Ceylan Ltd, Dreamscape Events is manned by most experienced professionals 
+              who had been in the industry for more than decades and served the Industry in National and Regional Level. With over a decade of experience, our team is made up of seasoned professionals who have planned and executed events of all scales. We bring creativity and a meticulous approach to every event, ensuring it runs flawlessly.</p>
+            <h1>Company Values</h1>
+            <p>At Dreamscape Events, we value integrity, innovation, customer satisfaction, and sustainability. Our dedicated team is passionate about creating events that leave a lasting impression.</p>
+              <br>
+            <img src="https://ctcconferences.com/wp-content/uploads/2021/06/Two-businessmen-reviewing-technology-solutions-for-upcoming-event.jpg" alt="Event management example" class="about-image"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Manage Your Event</h3>
+                    <p>Easily plan, organize, and manage every aspect of your event with our intuitive tools.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Customized Dashboard</h3>
+                    <p>Track your event's progress with a personalized dashboard designed for your specific needs.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>User Friendly</h3>
+                    <p>Our platform is designed with simplicity in providing you with the best customer servcice. </p>
+</div>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_kTpuqphu3FGyx6SHu9TPJ6f0LReqHtBKBQ&s" alt="Event Image 1">
+                <img src="https://www.shutterstock.com/image-photo/wedding-decorations-served-table-golden-260nw-2288554349.jpg" alt="Event Image 5">
+                <img src="https://skaichanphotography.com/img/header/marriage-proposal-photography-header.jpg" alt="Event Image 2">
+                      </div>
+        </div>
+    </section> <br> <br>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Event Management. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
